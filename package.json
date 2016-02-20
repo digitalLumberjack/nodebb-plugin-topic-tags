@@ -1,0 +1,28 @@
+{
+    "name": "nodebb-plugin-topic-tags",
+    "version": "0.0.1",
+    "description": "NodeBB plugin to add tags to new topics based on words in topic title.",
+    "main": "library.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pichalite/nodebb-plugin-topic-tags"
+    },
+    "keywords": [
+        "nodebb",
+        "plugin",
+        "topic",
+        "tags"
+    ],
+    "author": {
+        "name": "Pichalite",
+        "email": "pichalite.com@gmail.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/pichalite/nodebb-plugin-topic-tags/issues"
+    },
+    "homepage": "https://github.com/pichalite/nodebb-plugin-topic-tags",
+    "nbbpm": {
+        "compatibility": "^0.9.0"
+    }
+}

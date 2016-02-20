@@ -1,0 +1,11 @@
+{
+    "id": "nodebb-plugin-topic-tags",
+    "name": "NodeBB Topic Tags Plugin",
+    "description": "NodeBB plugin to add tags to new topics based on words in topic title.",
+    "url": "https://github.com/pichalite/nodebb-plugin-topic-tags",
+    "library": "./library.js",
+    "hooks": [
+        { "hook": "static:app.load", "method": "init" },
+        { "hook": "filter:topic.post", "method": "addTags" }
+    ]
+}
