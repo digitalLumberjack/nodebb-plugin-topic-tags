@@ -6,6 +6,8 @@
     "library": "./library.js",
     "hooks": [
         { "hook": "static:app.load", "method": "init" },
-        { "hook": "filter:topic.post", "method": "addTags" }
-    ]
+        { "hook": "filter:topic.post", "method": "addTags" },
+        { "hook": "filter:admin.header.build", "method": "addAdminNavigation" }
+    ],
+    "templates": "./templates"
 }
