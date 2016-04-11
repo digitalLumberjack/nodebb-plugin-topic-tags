@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-topic-tags",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NodeBB plugin to add tags to new topics based on words in topic title.",
   "main": "library.js",
   "repository": {
