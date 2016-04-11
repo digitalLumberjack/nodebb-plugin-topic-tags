@@ -11,7 +11,9 @@ TopicTags.init = function(params, callback) {
 	var	middleware = params.middleware;
 	
 	Meta.settings.get('topic-tags', function(err, settings) {
-		adminIgnoreList = settings.ignoredWords.split(",");
+		if (!err && settings.ignoredWords) {
+			adminIgnoreList = settings.ignoredWords.split(",");
+		}
 		ignoredList = ignoredList.concat(adminIgnoreList);
 	});
 
