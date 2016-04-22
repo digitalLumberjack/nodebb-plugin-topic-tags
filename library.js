@@ -26,12 +26,12 @@ TopicTags.init = function(params, callback) {
 TopicTags.addTags = function(data, callback) {
     var tags = data.title.replace(/(?:https?|ftp):\/\/[\n\S]+/g, '').replace(/[&\/\\#,+()$~%'":*?<>{}]/g, '').split(" ");
     
-    function isInIgnoredList (value) {
-        return ignoredList.indexOf(value.toLowerCase()) === -1;
+    function isValidAndNotIgnored (value) {
+        return ignoredList.indexOf(value.toLowerCase()) === -1 && value.length >= Meta.config.minimumTagLength && value.length <= Meta.config.maximumTagLength;
     }
         
     if (data.tags.length === 0) {
-        data.tags = tags.filter(isInIgnoredList);
+        data.tags = tags.filter(isValidAndNotIgnored);
     }
     
     callback(null, data);
