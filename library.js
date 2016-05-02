@@ -12,7 +12,7 @@ TopicTags.init = function(params, callback) {
 	
 	Meta.settings.get('topic-tags', function(err, settings) {
 		if (!err && settings.ignoredWords) {
-			adminIgnoreList = settings.ignoredWords.split(",");
+			adminIgnoreList = settings.ignoredWords.split(/[\s,]+/).join().split(",");
 		}
 		ignoredList = ignoredList.concat(adminIgnoreList);
 	});
