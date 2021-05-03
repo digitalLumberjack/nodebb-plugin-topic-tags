@@ -1,11 +1,11 @@
 {
-  "name": "nodebb-plugin-topic-tags",
-  "version": "0.1.3",
-  "description": "NodeBB plugin to add tags to new topics based on words in topic title.",
+  "name": "nodebb-plugin-topic-tags-next",
+  "version": "0.2.0",
+  "description": "NodeBB 1.17+ plugin to add tags to new topics based on words in topic title.",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pichalite/nodebb-plugin-topic-tags"
+    "url": "https://github.com/digitalLumberjack/nodebb-plugin-topic-tags"
   },
   "keywords": [
     "nodebb",
@@ -17,11 +17,17 @@
     "name": "Pichalite",
     "email": "pichalite.com@gmail.com"
   },
+  "maintainers": [
+    {
+      "name": "digitalLumberjack",
+      "email": "digitalLumberjack@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pichalite/nodebb-plugin-topic-tags/issues"
+    "url": "https://github.com/digitalLumberjack/nodebb-plugin-topic-tags/issues"
   },
-  "homepage": "https://github.com/pichalite/nodebb-plugin-topic-tags",
+  "homepage": "https://github.com/digitalLumberjack/nodebb-plugin-topic-tags",
   "nbbpm": {
     "compatibility": "^1.0.0"
   }
